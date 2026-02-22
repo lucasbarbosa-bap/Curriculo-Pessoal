@@ -1,0 +1,121 @@
+body{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #eff2d4;
+    color:darkslategrey;
+    font-family: sans-serif;
+}
+
+div.nome{
+    text-align: center;
+}
+div.nome h1{margin-bottom: 5px;}
+
+div.nome p{margin-top: 5px; margin-bottom: 0px;}
+
+div.nome nav a{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+div.contatos{padding: 15px;}
+
+div.contatos ul{ 
+    display: flex;
+    list-style: none; 
+
+    margin: 5px; 
+    padding: 0px;
+    gap: 30px;
+
+    justify-content: center;
+}
+
+div.contatos li{text-align: left; flex: 1;} /* pq to fazendo isso? eu acho  que as vezes sou um completo idiota por ficar fazendo esses minimos ajustes e detalhes*/
+div.contatos li strong{display: block;}
+div.contatos li a{display: block;}
+
+div.Galeria_project_chika{
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    gap: 45px;
+}
+
+div.Galeria_project_chika figure{margin: 0; padding: 0 15px;}
+div.Galeria_project_chika figure img{margin: 0; max-height: 100%; max-width: 100%; border-radius: 5px;}
+
+div.Galeria_project_chika figcaption{
+    margin: 3px 0px;
+    padding: 0px;
+
+    text-align: left;
+    font-size: 14px;
+    opacity: 0.85;
+    line-height: 1.4;
+}
+
+
+section::before{
+    content: "";
+    position: absolute;
+    pointer-events: none;
+
+    top: 0;
+    left: 0;
+
+    width: 95%;
+    height: 75px;
+
+    
+    border-left: solid 5px #2dab6f;
+    border-top: solid 5px #2dab6f;
+    border-top-left-radius: 5px;
+
+}
+section::after{
+    content: "";
+    position: absolute;
+    pointer-events: none;
+
+    bottom: 0;
+    right: 0;
+
+    width: 95%;
+    height: 75px;
+
+    border-right: solid 5px #2dab6f;
+    border-bottom: solid 5px #2dab6f;
+    border-bottom-right-radius: 5px;
+}
+
+section{
+    position: relative;
+
+    padding:  5px 20px;
+    margin: 30px 0;
+
+    text-align:left;
+    
+}
+section a.repo_github{
+    display: inline-block;
+    padding: 15px;
+    margin-left: 0;
+
+
+}
+
+h1,h2,h3 {
+    color: #2dab6f;
+}
+p{
+    color: #59504A;
+}
+
+a{
+    color: #9f3322d5;
+}
+strong{
+    color: #59504A;
+}
