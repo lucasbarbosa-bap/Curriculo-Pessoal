@@ -12,7 +12,7 @@ div.nome{
 }
 div.nome h1{margin-bottom: 5px;}
 
-div.nome p{margin-top: 5px; margin-bottom: 0px;}
+div.nome p{margin-top: 10px; margin-bottom: 0px;}
 
 div.nome nav a{
     display: inline-block;
@@ -36,9 +36,79 @@ div.contatos li{text-align: left; flex: 1;} /* pq to fazendo isso? eu acho  que 
 div.contatos li strong{display: block;}
 div.contatos li a{display: block;}
 
+div.topo_projetos{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+div.topo_projetos a{
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    color: #eff2d4;
+    background-color: #2dab6f;
+    border-radius: 5px;
+
+    transition: all 0.25s ease-in-out;
+}
+div.topo_projetos a:hover{background-color: #A63247}
+
+div.botao_projetos_page nav a:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 10%;
+    height: 25%;
+
+    border-left: solid 5px #2dab6f;
+    border-top: solid 5px #2dab6f;
+    border-top-left-radius: 5px;
+}
+
+div.botao_projetos_page nav a::after{
+    position: absolute;
+    content: "";
+    bottom:0;
+    right: 0;
+
+    width: 10%;
+    height: 25%;
+
+    border-right: solid 5px #2dab6f;
+    border-bottom: solid 5px #2dab6f;
+    border-top-right-radius: 5px;
+}
+
+div.botao_projetos_page nav a{
+    position: relative;
+
+
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    color: #2dab6f;
+    background-color: transparent;
+    border-radius: 5px;
+
+    transition: all 0.25s ease-in-out;
+}
+
+div.botao_projetos_page nav a:hover{background-color: #2dab6f; color: #eff2d4;}
+
 div.Galeria_project_chika{
     display: grid;
-    grid-template-columns: repeat( 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 45px;
 }
 
