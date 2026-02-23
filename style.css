@@ -27,14 +27,15 @@ div.contatos ul{
 
     margin: 5px; 
     padding: 0px;
-    gap: 30px;
 
     justify-content: center;
 }
 
-div.contatos li{text-align: left; flex: 1;} /* pq to fazendo isso? eu acho  que as vezes sou um completo idiota por ficar fazendo esses minimos ajustes e detalhes*/
+div.contatos li{ padding: 5px 10px; justify-content: center;} /* pq to fazendo isso? eu acho  que as vezes sou um completo idiota por ficar fazendo esses minimos ajustes e detalhes*/
 div.contatos li strong{display: block;}
 div.contatos li a{display: block;}
+div.contatos li:not(:last-child){border-right: solid 3px #2dab6f; padding-right: 25px; margin-right: 5px;}
+div.contatos li:last-child{ margin-right: 55px;}
 
 div.topo_projetos{
     display: flex;
@@ -72,7 +73,7 @@ div.botao_projetos_page nav a:before{
     border-top-left-radius: 5px;
 }
 
-div.botao_projetos_page nav a::after{
+div.botao_projetos_page nav a::after{ /*acho que ja perdi a mão nesse trabalho...*/
     position: absolute;
     content: "";
     bottom:0;
