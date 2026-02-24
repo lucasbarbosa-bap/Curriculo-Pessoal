@@ -201,3 +201,49 @@ a{
 strong{
     color: #59504A;
 }
+
+@media (max-width: 700px){
+    body{
+        padding: 30px;
+    }
+
+    div.contatos ul{
+        flex-direction: column;
+    }
+    div.contatos li:not(:last-child){border-right: none; border-bottom: solid 3px #2dab6f; padding-bottom: 20px; margin-bottom: 5px;}
+    div.contatos li:last-child{ margin-right: 55px;}
+
+    div.Galeria_project_chika{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+    div.topo_projetos a{
+    padding: 2px 5px;
+    margin-top: 20px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    color: #2dab6f;
+    background-color: transparent;
+    border-radius: 4px;
+
+    border-bottom: solid 3px #2dab6f;
+
+    transition: all 0.25s ease-in-out;
+    }
+
+    div.topo_projetos a:hover{ background-color: transparent;}
+
+
+    div.topo_projetos a:active{
+        background-color: transparent;
+        color: #A63247;
+        border-color: #A63247;
+
+    }
+
+    div.topo_projetos a:active::after{ width: 80%; left: 0;}
+}
